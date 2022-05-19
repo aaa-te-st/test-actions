@@ -2,9 +2,9 @@ name: Scheduled run
 on:
   workflow_dispatch:
   schedule:
-    - cron: '30 23 * * 4'
+    - cron: '45 23 * * 4'
 jobs:
   Run-Scheduled-Action:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "This runs every Thursday at 11:30pm"
+      - run: echo "This runs every Thursday at 11:45pm"
