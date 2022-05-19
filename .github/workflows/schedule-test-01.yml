@@ -1,0 +1,9 @@
+name: Scheduled run
+on:
+  schedule:
+    - cron: '30 19 * * 4'
+jobs:
+  run-scheduled-workflow
+  runs-on: ubuntu-latest
+  steps:
+    - run: "This runs every Thursday at 7:30pm"
