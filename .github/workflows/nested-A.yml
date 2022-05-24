@@ -4,4 +4,4 @@ on:
 jobs:
   job_a:
     name: 'Job A'
-    uses: `./.github/workflows/nested-workflow.yml`
+    uses: ./.github/workflows/nested-workflow.yml
