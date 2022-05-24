@@ -1,0 +1,7 @@
+name: 'Nested level C'
+on:
+  workflow_dispatch:
+jobs:
+  job_c:
+    name: 'Job C'
+    uses ./.github/workflows/nested-B.yml@mail
