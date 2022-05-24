@@ -1,5 +1,6 @@
 name: 'Nested level A'
-on: 'workflow_dispatch'
+on: 
+  workflow_dispatch:
 jobs:
   job_a:
     name: 'Job A'
