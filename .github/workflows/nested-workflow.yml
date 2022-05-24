@@ -1,0 +1,7 @@
+name: 'Reusable workflow'
+on: 'workflow-dispatch'
+jobs:
+  test_job:
+    name: 'Just a test job'
+    runs-on: 'ubuntu-latest'
+    steps: echo "This is a test job"
