@@ -1,5 +1,8 @@
 name: 'Test workflow'
-on: 'workflow_dispatch'
+on: 
+  # This allows this workflow to be recalled by other workflows
+  workflow_call:
+  workflow_dispatch:
 jobs:
   test_job:
     name: 'Just a test job'
