@@ -5,4 +5,4 @@ jobs:
     name: 'Just a test job'
     runs-on: 'ubuntu-latest'
     steps: 
-      - run: echo "This is a test job. This is the job ID ${{ job_id }}"
+      - run: echo "This is a test job. This is the job ID ${{ jobs.job_id }}"
