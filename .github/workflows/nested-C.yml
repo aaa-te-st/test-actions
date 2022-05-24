@@ -4,4 +4,4 @@ on:
 jobs:
   job_c:
     name: 'Job C'
-    uses: ./.github/workflows/nested-B.yml@mail
+    uses: ./.github/workflows/nested-B.yml
