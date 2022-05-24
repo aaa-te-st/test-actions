@@ -2,6 +2,6 @@ name: 'Nested level B'
 on:
   workflow_dispatch:
 jobs:
-  jobs_b:
+  job_b:
     name: 'Jobs B'
     uses: ./.github/workflows/nested-A.yml
