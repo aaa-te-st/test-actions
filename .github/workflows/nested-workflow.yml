@@ -1,5 +1,5 @@
 name: 'Reusable workflow'
-on: 'workflow-dispatch'
+on: 'workflow_dispatch'
 jobs:
   test_job:
     name: 'Just a test job'
