@@ -1,0 +1,21 @@
+name: 'First issue label'
+on:
+  label:
+    types: ['good first issue']
+jobs:
+  add_comment:
+    name: 'This is add comment job'
+    if: github.event.label.name == 'good first issue'
+    runs-on: macos-latest
+    steps:
+      - name: Create comment
+        uses: peter-evans/create-or-update-comment@v2
+        with:
+          issue-number: 1
+          body: |
+            This is a good first issue
+            - With GitHub **Markdown** :sparkles:
+            - Created by [create-or-update-comment][1]
+
+            [1]: https://github.com/peter-evans/create-or-update-comment
+          reactions: '+1'
