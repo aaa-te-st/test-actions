@@ -1,7 +1,7 @@
 name: 'No empty issue'
 on:
   issues:
-    types: created
+    types: [opened, edited]
 jobs:
   is_issue_empty:
     name: 'Is this issue empty'
