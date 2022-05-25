@@ -1,7 +1,8 @@
 name: 'First issue label'
 on:
-  label:
-    types: ['good first issue']
+  issues:
+    types:
+      - labeled
 jobs:
   add_comment:
     name: 'This is add comment job'
