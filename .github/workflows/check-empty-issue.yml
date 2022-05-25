@@ -1,0 +1,15 @@
+name: 'No empty issue'
+on:
+  issues:
+    types: created
+jobs:
+  is_issue_empty:
+    name: 'Is this issue empty'
+    runs-on: macos-latest
+    if: {{ github.event.issue.body }} == ''
+    steps:
+      - name: 'Add comment'
+        uses: peter-evans/create-or-update-comment@v2
+        with:
+          issue-number: ${{ github.event.issue.number }}
+          body: '⚠️ Make sure to add description on this issue'
