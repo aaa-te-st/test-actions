@@ -6,7 +6,7 @@ jobs:
   is_issue_empty:
     name: 'Is this issue empty'
     runs-on: macos-latest
-    if: {{ github.event.issue.body }} == ''
+    if: github.event.issue.body == ''
     steps:
       - name: 'Add comment'
         uses: peter-evans/create-or-update-comment@v2
