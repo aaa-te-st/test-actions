@@ -1,0 +1,10 @@
+name: 'This is a matrix'
+on:
+  workflow_call:
+  workflow_dispatch:
+jobs:
+  job_a:
+    strategy:
+      matrix:
+        name: ['Job matrix A','Job matrix B']
+    uses: ./.github/workflows/nested-workflow.yml
