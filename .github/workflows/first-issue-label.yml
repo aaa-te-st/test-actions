@@ -5,7 +5,7 @@ on:
       - labeled
 jobs:
   add_comment:
-    name: 'This is add comment job'
+    # name: 'This is add comment job'
     if: github.event.label.name == 'good first issue'
     runs-on: macos-latest
     steps:
